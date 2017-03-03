@@ -1,0 +1,23 @@
+<ion-header class="bar bar-header bar-positive">
+  <ion-navbar>
+    <ion-title>
+      Contract Timer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-grid>
+          <ion-row center>
+            <ion-col width-25>
+              <ion-row>
+                <button ion-fab mini color="secondary" (click)="startTimer()"><ion-icon name="ios-play"></ion-icon></button>
+                <button ion-fab mini color="danger" (click)="stopTimer()"><ion-icon name="ios-power"></ion-icon></button>
+              </ion-row>
+            </ion-col>
+            <ion-col width-75 text-center text-middle>
+              <h1>{{ counter | currency: 'GBP':true}}</h1>
+            </ion-col>
+          </ion-row> 
+</ion-grid>
+</ion-content>
